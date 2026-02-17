@@ -1,0 +1,48 @@
+.sidenav-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-sidenav {
+  width: 240px;
+
+  .sidenav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    .brand-icon {
+      font-size: 32px;
+      width: 32px;
+      height: 32px;
+      color: #5c6bc0;
+    }
+    .brand-name {
+      font-size: 14px;
+      line-height: 1.4;
+      strong { font-weight: 700; font-size: 16px; }
+    }
+  }
+
+  .active-link {
+    background: rgba(92, 107, 192, 0.12) !important;
+    color: #5c6bc0 !important;
+    font-weight: 500;
+  }
+}
+
+.app-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-area {
+  padding: 24px;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  box-sizing: border-box;
+}

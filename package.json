@@ -1,0 +1,21 @@
+{
+  "name": "interview-prep",
+  "version": "1.0.0",
+  "description": "Angular 17 Investment Portfolio Manager — Interview Showcase",
+  "type": "module",
+  "scripts": {
+    "seed": "node server/seed.js",
+    "api": "json-server --watch server/db.json --routes server/routes.json --port 3000 --delay 300",
+    "app": "cd portfolio-manager && npx ng serve --proxy-config proxy.conf.json",
+    "dev": "npm run seed && concurrently --kill-others-on-fail \"npm:api\" \"npm:app\"",
+    "build": "cd portfolio-manager && npx ng build --configuration production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "9.9.0",
+    "concurrently": "9.2.1",
+    "json-server": "0.17.4"
+  }
+}

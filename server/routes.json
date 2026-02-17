@@ -1,0 +1,5 @@
+{
+  "/api/*": "/$1",
+  "/portfolios/:id/positions": "/positions?portfolioId=:id",
+  "/portfolios/:id/transactions": "/transactions?portfolioId=:id"
+}
